@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shumet Desalegn Certified Accountant</title>
+  <link rel="icon" type="image/png" href="acc.png.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Background Orbs -->
+  <div class="bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Header -->
+  <header id="header">
+    <img src="acc.png.png" alt="Logo" class="brand-logo" />
+    <a href="#home" class="brand" onclick="showPage('home')">
+      <span class="brand-name">Shumet Desalegn </span>
+      <span class="brand-tagline">CERTIFIED ACCOUNTANT</span>
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Side Panel -->
+  <div class="overlay" id="overlay"></div>
+  <nav class="side-panel" id="sidePanel">
+    <button class="close-btn" id="closePanel" aria-label="Close menu">&times;</button>
+    <ul>
+      <li><a href="#home"        data-page="home"         onclick="showPage('home')"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#about"       data-page="about"        onclick="showPage('about')"><i class="fas fa-info-circle"></i> About Us</a></li>
+      <li><a href="#services"    data-page="services"     onclick="showPage('services')"><i class="fas fa-briefcase"></i> Services</a></li>
+      <li><a href="#portfolio"   data-page="portfolio"    onclick="showPage('portfolio')"><i class="fas fa-th-large"></i> Portfolio</a></li>
+      <li><a href="#faq"         data-page="faq"          onclick="showPage('faq')"><i class="fas fa-question-circle"></i> FAQ</a></li>
+      <li><a href="#contact"     data-page="contact"      onclick="showPage('contact')"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HOME PAGE ===== -->
+  <section class="page active" id="home">
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="hero-content animate-fadein">
+        <span class="badge">Trusted &amp; Authorised</span>
+        <h1>Empowering Your <span class="gradient-text">Financial Future</span></h1>
+        <p>We deliver premium authorised account management, strategic advisory, and tailored financial solutions for individuals and enterprises.</p>
+        <div class="hero-btns">
+          <button class="btn-primary" onclick="showPage('services')">Explore Services</button>
+          <button class="btn-outline" onclick="showPage('contact')">Get In Touch</button>
+        </div>
+      </div>
+      <div class="hero-visual animate-slidein">
+        <div class="glass-card hero-card">
+          <i class="fas fa-shield-alt"></i>
+          <h3>100% Authorised</h3>
+          <p>Fully regulated and compliant with all industry standards.</p>
+        </div>
+        <div class="glass-card hero-card">
+          <i class="fas fa-chart-line"></i>
+          <h3>Growth Focused</h3>
+          <p>Strategies designed to maximise your financial growth.</p>
+        </div>
+        <div class="glass-card hero-card">
+          <i class="fas fa-users"></i>
+          <h3>Client First</h3>
+          <p>Dedicated support and personalised service at every step.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Overview -->
+    <div class="section-inner">
+      <h2 class="section-title">What We Offer</h2>
+      <p class="section-sub">A snapshot of our core capabilities</p>
+      <div class="cards-grid">
+        <div class="glass-card service-mini animate-fadein">
+          <i class="fas fa-landmark"></i>
+          <h4>Account Management</h4>
+          <p>Comprehensive management of authorised accounts with full transparency.</p>
+        </div>
+        <div class="glass-card service-mini animate-fadein">
+          <i class="fas fa-coins"></i>
+          <h4>Financial Advisory</h4>
+          <p>Expert guidance to help you make informed financial decisions.</p>
+        </div>
+        <div class="glass-card service-mini animate-fadein">
+          <i class="fas fa-file-contract"></i>
+          <h4>Compliance &amp; Audit</h4>
+          <p>Ensuring your operations meet all regulatory requirements.</p>
+        </div>
+        <div class="glass-card service-mini animate-fadein">
+          <i class="fas fa-handshake"></i>
+          <h4>Partnership Solutions</h4>
+          <p>Building long-term partnerships that drive mutual success.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-bar">
+      <div class="stat"><span class="stat-num" data-target="15">0</span><span>+</span><p>Years Experience</p></div>
+      <div class="stat"><span class="stat-num" data-target="98">0</span><span>%</span><p>Satisfaction Rate</p></div>
+    </div>
+
+  </section>
+
+  <!-- ===== ABOUT PAGE ===== -->
+  <section class="page" id="about">
+    <div class="section-inner">
+      <h2 class="section-title">About Us</h2>
+      <p class="section-sub">Our story, mission, and the people behind the brand</p>
+
+      <div class="two-col">
+        <div class="glass-card about-story animate-fadein">
+          <h3><i class="fas fa-book-open"></i> Our Story</h3>
+          <p>Founded over 15 years ago, Shumet Desalegn Certified Accountant began as a small advisory firm with a single mission: to make authorised financial management accessible, transparent, and trustworthy for everyone.</p>
+          <p>Today, we serve hundreds of clients across multiple sectors, backed by a team of certified professionals who bring decades of combined expertise to every engagement.</p>
+        </div>
+        <div class="glass-card about-story animate-fadein">
+          <h3><i class="fas fa-bullseye"></i> Mission &amp; Vision</h3>
+          <p><strong>Mission:</strong> To provide authorised, ethical, and results-driven financial account management that empowers our clients to achieve their goals with confidence.</p>
+          <p><strong>Vision:</strong> To be the most trusted authorised account management firm, recognised for integrity, innovation, and client-centric excellence.</p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ===== SERVICES PAGE ===== -->
+  <section class="page" id="services">
+    <div class="section-inner">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-sub">Tailored solutions for every financial need</p>
+      <div class="services-grid">
+
+        <div class="glass-card svc-card animate-fadein">
+          <div class="svc-icon"><i class="fas fa-landmark"></i></div>
+          <h3>Account Management</h3>
+          <p>Full-cycle management of authorised accounts including setup, monitoring, reporting, and closure. We ensure every account operates within regulatory boundaries.</p>
+          <ul><li>Account setup &amp; onboarding</li><li>Real-time monitoring</li><li>Detailed reporting</li></ul>
+        </div>
+
+        <div class="glass-card svc-card animate-fadein">
+          <div class="svc-icon"><i class="fas fa-coins"></i></div>
+          <h3>Financial Advisory</h3>
+          <p>Strategic financial advice tailored to your personal or business goals. Our advisors work closely with you to build a roadmap for sustainable growth.</p>
+          <ul><li>Investment planning</li><li>Risk assessment</li><li>Portfolio optimisation</li></ul>
+        </div>
+
+        <div class="glass-card svc-card animate-fadein">
+          <div class="svc-icon"><i class="fas fa-file-contract"></i></div>
+          <h3>Compliance &amp; Audit</h3>
+          <p>Comprehensive compliance reviews and internal audits to keep your business aligned with the latest regulatory standards and best practices.</p>
+          <ul><li>Regulatory compliance checks</li><li>Internal audit services</li><li>Risk mitigation strategies</li></ul>
+        </div>
+
+        <div class="glass-card svc-card animate-fadein">
+          <div class="svc-icon"><i class="fas fa-handshake"></i></div>
+          <h3>Partnership Solutions</h3>
+          <p>We help businesses forge strategic partnerships that create value, expand reach, and drive long-term mutual success.</p>
+          <ul><li>Partner identification</li><li>Deal structuring</li><li>Ongoing relationship management</li></ul>
+        </div>
+
+        <div class="glass-card svc-card animate-fadein">
+          <div class="svc-icon"><i class="fas fa-chart-pie"></i></div>
+          <h3>Reporting &amp; Analytics</h3>
+          <p>Data-driven insights and custom reports that give you a clear picture of your financial health and performance metrics.</p>
+          <ul><li>Custom dashboards</li><li>Performance analytics</li><li>Trend forecasting</li></ul>
+        </div>
+
+        <div class="glass-card svc-card animate-fadein">
+          <div class="svc-icon"><i class="fas fa-lock"></i></div>
+          <h3>Security &amp; Fraud Prevention</h3>
+          <p>Robust security protocols and proactive fraud detection to safeguard your accounts and financial assets at all times.</p>
+          <ul><li>Fraud monitoring</li><li>Security audits</li><li>Incident response</li></ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO PAGE ===== -->
+  <section class="page" id="portfolio">
+    <div class="section-inner">
+      <h2 class="section-title">Portfolio</h2>
+      <p class="section-sub">A selection of our most impactful projects</p>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="advisory">Advisory</button>
+        <button class="filter-btn" data-filter="compliance">Compliance</button>
+        <button class="filter-btn" data-filter="management">Management</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="glass-card portfolio-card animate-fadein" data-category="advisory">
+          <div class="portfolio-img"><i class="fas fa-chart-line"></i></div>
+          <div class="portfolio-info">
+            <h4>Growth Strategy 2023</h4>
+            <span class="tag">Advisory</span>
+            <p>Developed a comprehensive growth strategy for a mid-size enterprise, resulting in 40% revenue increase.</p>
+          </div>
+        </div>
+        <div class="glass-card portfolio-card animate-fadein" data-category="compliance">
+          <div class="portfolio-img"><i class="fas fa-shield-alt"></i></div>
+          <div class="portfolio-info">
+            <h4>Regulatory Overhaul</h4>
+            <span class="tag">Compliance</span>
+            <p>Full compliance restructuring for a financial institution, achieving zero audit findings.</p>
+          </div>
+        </div>
+        <div class="glass-card portfolio-card animate-fadein" data-category="management">
+          <div class="portfolio-img"><i class="fas fa-landmark"></i></div>
+          <div class="portfolio-info">
+            <h4>Multi-Account Portfolio</h4>
+            <span class="tag">Management</span>
+            <p>Managed a portfolio of 50+ authorised accounts for a corporate client with full transparency.</p>
+          </div>
+        </div>
+        <div class="glass-card portfolio-card animate-fadein" data-category="advisory">
+          <div class="portfolio-img"><i class="fas fa-coins"></i></div>
+          <div class="portfolio-info">
+            <h4>Investment Roadmap</h4>
+            <span class="tag">Advisory</span>
+            <p>Crafted a 5-year investment roadmap that delivered consistent above-market returns.</p>
+          </div>
+        </div>
+        <div class="glass-card portfolio-card animate-fadein" data-category="compliance">
+          <div class="portfolio-img"><i class="fas fa-file-contract"></i></div>
+          <div class="portfolio-info">
+            <h4>Annual Audit Programme</h4>
+            <span class="tag">Compliance</span>
+            <p>Designed and executed an annual audit programme for a multinational client group.</p>
+          </div>
+        </div>
+        <div class="glass-card portfolio-card animate-fadein" data-category="management">
+          <div class="portfolio-img"><i class="fas fa-handshake"></i></div>
+          <div class="portfolio-info">
+            <h4>Strategic Partnership Deal</h4>
+            <span class="tag">Management</span>
+            <p>Facilitated a high-value strategic partnership that expanded client market reach by 60%.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ PAGE ===== -->
+  <section class="page" id="faq">
+    <div class="section-inner">
+      <h2 class="section-title">FAQ</h2>
+      <p class="section-sub">Answers to the questions we hear most</p>
+
+      <div class="faq-list">
+        <div class="faq-item glass-card">
+          <button class="faq-question">What is an authorised account? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer"><p>An authorised account is a financial account that has been officially approved and regulated by the relevant financial authority, ensuring it operates within legal and compliance frameworks.</p></div>
+        </div>
+        <div class="faq-item glass-card">
+          <button class="faq-question">How do I get started with your services? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer"><p>Simply reach out via our Contact page or call us directly. One of our advisors will schedule a free initial consultation to understand your needs and recommend the best solutions.</p></div>
+        </div>
+        <div class="faq-item glass-card">
+          <button class="faq-question">Are your services suitable for individuals as well as businesses? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer"><p>Absolutely. We serve both individual clients and businesses of all sizes, from sole traders to large corporations. Our services are fully tailored to your specific situation.</p></div>
+        </div>
+        <div class="faq-item glass-card">
+          <button class="faq-question">How do you ensure compliance with regulations? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer"><p>Our compliance team stays up to date with all relevant regulations and conducts regular reviews of your accounts and processes to ensure ongoing adherence to all applicable rules.</p></div>
+        </div>
+        <div class="faq-item glass-card">
+          <button class="faq-question">What makes you different from other account management firms? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer"><p>We combine deep regulatory expertise with a genuinely client-first approach. Every client gets a dedicated account manager, transparent reporting, and proactive communication — not just reactive support.</p></div>
+        </div>
+        <div class="faq-item glass-card">
+          <button class="faq-question">How are your fees structured? <i class="fas fa-chevron-down"></i></button>
+          <div class="faq-answer"><p>Our fees are transparent and tailored to the scope of services required. We offer fixed-fee packages as well as flexible arrangements. Full fee details are provided upfront with no hidden charges.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT PAGE ===== -->
+  <section class="page" id="contact">
+    <div class="section-inner">
+      <h2 class="section-title">Contact Us</h2>
+      <p class="section-sub">We'd love to hear from you</p>
+
+      <div class="contact-layout">
+        <div class="glass-card contact-info animate-fadein">
+          <h3>Get In Touch</h3>
+          <div class="contact-item"><i class="fas fa-map-marker-alt"></i><div><strong>Address</strong><p>Addis Ababa, Ethiopia</p></div></div>
+          <div class="contact-item"><i class="fas fa-phone"></i><div><strong>Phone</strong><p>+44 20 1234 5678</p></div></div>
+          <div class="contact-item"><i class="fas fa-envelope"></i><div><strong>Email</strong><p>email</p></div></div>
+          <div class="contact-item"><i class="fas fa-clock"></i><div><strong>Hours</strong><p>Mon–Fri: 9:00 AM – 6:00 PM</p></div></div>
+          <div class="map-placeholder"><i class="fas fa-map"></i><p>Interactive Map Placeholder</p></div>
+        </div>
+
+        <div class="glass-card contact-form-wrap animate-fadein">
+          <h3>Send a Message</h3>
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="Your full name" />
+              <span class="error-msg" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="your@email.com" />
+              <span class="error-msg" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="How can we help?" />
+              <span class="error-msg" id="subjectError"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Tell us more..."></textarea>
+              <span class="error-msg" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn-primary full-width">Send Message <i class="fas fa-paper-plane"></i></button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i> Your message has been sent. We'll be in touch soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Shumet Desalegn Certified Accountant. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#home" onclick="showPage('home')">Home</a>
+      <a href="#about" onclick="showPage('about')">About</a>
+      <a href="#services" onclick="showPage('services')">Services</a>
+      <a href="#contact" onclick="showPage('contact')">Contact</a>
+    </div>
+  </footer>
+
+  <!-- ===== COOKIE CONSENT BANNER ===== -->
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie consent">
+    <div class="cookie-inner">
+      <div class="cookie-icon"><i class="fas fa-cookie-bite"></i></div>
+      <div class="cookie-text">
+        <h4>We use cookies</h4>
+        <p>
+          We use essential cookies to make our website work, and optional analytics and preference cookies to improve your experience.
+          By clicking <strong>"Accept All"</strong>, you consent to our use of cookies in accordance with our
+          <a href="#" onclick="showCookiePolicy()">Cookie Policy</a> and <a href="#" onclick="showPrivacyPolicy()">Privacy Policy</a>.
+        </p>
+      </div>
+      <div class="cookie-actions">
+        <button class="cookie-btn-secondary" id="cookieManage">Manage Preferences</button>
+        <button class="cookie-btn-secondary" id="cookieReject">Reject Non-Essential</button>
+        <button class="cookie-btn-primary" id="cookieAccept">Accept All</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie Preferences Modal -->
+  <div class="cookie-modal-overlay" id="cookieModalOverlay">
+    <div class="cookie-modal" role="dialog" aria-label="Cookie preferences">
+      <div class="cookie-modal-header">
+        <h3><i class="fas fa-sliders-h"></i> Cookie Preferences</h3>
+        <button class="cookie-modal-close" id="cookieModalClose">&times;</button>
+      </div>
+      <div class="cookie-modal-body">
+        <p class="cookie-modal-intro">
+          We use different types of cookies to optimise your experience on our website. You can choose which categories you consent to below.
+          Note that disabling some cookies may affect your experience on the site.
+        </p>
+        <div class="cookie-pref-item">
+          <div class="cookie-pref-info">
+            <strong>Essential Cookies</strong>
+            <span class="cookie-required-badge">Always Active</span>
+            <p>These cookies are necessary for the website to function and cannot be switched off. They are usually set in response to actions you take such as setting your privacy preferences or filling in forms.</p>
+          </div>
+          <label class="cookie-toggle disabled"><input type="checkbox" checked disabled /><span class="toggle-slider"></span></label>
+        </div>
+        <div class="cookie-pref-item">
+          <div class="cookie-pref-info">
+            <strong>Analytics Cookies</strong>
+            <p>These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. All information these cookies collect is aggregated and anonymous.</p>
+          </div>
+          <label class="cookie-toggle"><input type="checkbox" id="analyticsConsent" checked /><span class="toggle-slider"></span></label>
+        </div>
+        <div class="cookie-pref-item">
+          <div class="cookie-pref-info">
+            <strong>Preference Cookies</strong>
+            <p>These cookies enable the website to remember choices you make (such as your language or region) and provide enhanced, more personal features.</p>
+          </div>
+          <label class="cookie-toggle"><input type="checkbox" id="prefConsent" checked /><span class="toggle-slider"></span></label>
+        </div>
+        <div class="cookie-pref-item">
+          <div class="cookie-pref-info">
+            <strong>Marketing Cookies</strong>
+            <p>These cookies may be set through our site by our advertising partners to build a profile of your interests and show you relevant adverts on other sites.</p>
+          </div>
+          <label class="cookie-toggle"><input type="checkbox" id="marketingConsent" /><span class="toggle-slider"></span></label>
+        </div>
+      </div>
+      <div class="cookie-modal-footer">
+        <button class="cookie-btn-secondary" id="cookieSavePrefs">Save My Preferences</button>
+        <button class="cookie-btn-primary" id="cookieAcceptAll">Accept All</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
